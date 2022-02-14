@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/history_view">
+
+    <ImageView
+        android:id="@+id/faviconTab"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:contentDescription="@null"
+        android:background="@color/white"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_home" />
+
+    <TextView
+        android:id="@+id/record_item_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@id/faviconTab"
+        android:layout_toStartOf="@id/deleteAction"
+        android:maxLines="1"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record_item_time"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/faviconTab"
+        android:layout_toStartOf="@id/deleteAction"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:singleLine="true"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:layout_toEndOf="@id/faviconTab"
+        android:layout_toStartOf="@id/deleteAction"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/deleteAction"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@null"
+        android:gravity="end"
+        app:srcCompat="@drawable/ic_action_delete" />
+
+</RelativeLayout>

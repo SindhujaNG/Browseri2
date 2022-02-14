@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addbookmark"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_bookmark_24"
+        android:title="addbookmark"/>
+
+    <item
+        android:id="@+id/newtab"
+        android:title="New Tab" />
+
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh" />
+    <item
+        android:id="@+id/history"
+        android:title="History" />
+    <item
+        android:id="@+id/bookmark"
+        android:title="Bookmark" />
+    <item
+        android:id="@+id/share"
+        android:title="Share" />
+
+</menu>
